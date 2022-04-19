@@ -657,7 +657,7 @@ def main_game(action_mode, best_score):
                     left = True
                 elif event.key == pygame.K_d:
                     right = True
-                elif event.key == pygame.K_q :
+                elif event.key == pygame.K_ESCAPE :
                     window_is_open = 'pause'
                     
 
