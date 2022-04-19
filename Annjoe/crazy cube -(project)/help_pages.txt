@@ -1,0 +1,24 @@
+		---------------Player modes------------------ 
+
+        *red cube ------> normal mode.No special powers. 
+        *blue giant -----> Special power not yet implemented 
+        *slayer ------> Special power not yet implemented 
+        *bomb -----> can destroy all enemies active at the moment(Press B)(will be alerted when available) 
+        
+        ----------------Power ups---------------------
+
+        *time freeze (green) ---> freezes enemies for 10 seconds
+        *shield (yellow) ---> protection for 20 seconds
+        *gravity aura (blue) ---> creates a field that will enslave the enemies and fight for you
+        *health (red) ----> health increase(+8)
+        *score bag (brownish pink)----> gives score increments depending on the size
+
+        ------------Scoring and Damage-----------------
+
+        Hitting enemies increase score as well as deal damage.
+        Score and damage depends on size of the enemies.The bigger the enemy, the bigger the both.
+
+    Note 1:  Slo-mo hits are enabled by default.
+    Note 2:  Press Q or Esc to quit game while playing.
+
+
