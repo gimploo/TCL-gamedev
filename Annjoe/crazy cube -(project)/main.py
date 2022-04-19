@@ -596,11 +596,12 @@ def main_game(action_mode, best_score):
             time += 1
             score_time += 1
             #powerup_active_time += 1
-            powerup_generation_time += 1
+            if window_is_open == True:
+                powerup_generation_time += 1
 
-            if active_power_icons:
-                for p_up in active_power_icons:
-                    power[4] += 1
+                if active_power_icons:
+                    for p_up in active_power_icons:
+                        power[4] += 1
 
         #position chnages according to buttons
         if up:
@@ -756,15 +757,16 @@ def main_game(action_mode, best_score):
                 #powerup_generation_time += (1/(10**20)) #to avoid to much random generations disrupting true randomness
                 
             #power up generation     
-            if powerup_generation_time == render_time:
-                new_ab, rad = ability.ability_generator()
-                
-                position = powerup_position_generator((defpos_x, defpos_y), p_w)
-                #print("rendered at", position, "at", render_time)
-                rect_pos = pygame.Rect((position[0] - rad/(powerup_correction_factor * 2)), (position[1] - rad / (powerup_correction_factor * 2)), rad / (powerup_correction_factor), rad / (powerup_correction_factor))
-                power_up_active_time = 0
-                active_power_icons.append([new_ab, position, rect_pos,power_ups, power_up_active_time, rad])
-                render_time = None
+            if render_time != None:    
+                if powerup_generation_time >= render_time:
+                    new_ab, rad = ability.ability_generator()
+                    
+                    position = powerup_position_generator((defpos_x, defpos_y), p_w)
+                    #print("rendered at", position, "at", render_time)
+                    rect_pos = pygame.Rect((position[0] - rad/(powerup_correction_factor * 2)), (position[1] - rad / (powerup_correction_factor * 2)), rad / (powerup_correction_factor), rad / (powerup_correction_factor))
+                    power_up_active_time = 0
+                    active_power_icons.append([new_ab, position, rect_pos,power_ups, power_up_active_time, rad])
+                    render_time = None
             
             #power up render
             for power in active_power_icons:
