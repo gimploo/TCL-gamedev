@@ -1182,7 +1182,7 @@ def main_menu():
     
     menu = 'main menu'
     main_menu_buttons = [Button( 450, 200, 100, 35, (255, 0, 0), text_size=23, text = 'Play', text_color = (0, 0, 0)), Button( 450, 255, 100, 35, (255, 0, 0), text_size=23, text = 'Help', text_color = (0, 0, 0)), Button( 450, 305, 100, 35, (255, 0, 0), text_size=23, text = 'Settings', text_color = (0, 0, 0)), Button( 450, 355, 100, 35, (255, 0, 0), text_size=23, text = 'Quit', text_color = (0, 0, 0))]
-    help_buttons = [Button(20, 550, 200, 30, (255, 0, 0), text_size=23, text = 'Previous', text_color = (0, 0, 0)), Button( 805, 550, 200, 30, (255, 0, 0), text_size=23, text = 'Next', text_color = (0, 0, 0)), Button( 800, 20, 200, 30, (255, 0, 0), text_size=23, text = 'Back to main menu', text_color = (0, 0, 0))]
+    help_buttons = [Button(20, 552, 200, 30, (255, 0, 0), text_size=23, text = 'Previous', text_color = (0, 0, 0)), Button( 805, 552, 200, 30, (255, 0, 0), text_size=23, text = 'Next', text_color = (0, 0, 0)), Button( 800, 20, 200, 30, (255, 0, 0), text_size=23, text = 'Back to main menu', text_color = (0, 0, 0))]
     action_hero_cam = 'enabled'
     settings_buttons = [Button(50, 150, 300, 30, (255, 0, 0), text_size=22, text = f'Action-hero cam:{action_hero_cam.title()}', text_color = (0, 0, 0)), Button(50, 190, 300, 30, (255, 0, 0), text_size=22, text = 'Reset High Score', text_color = (0, 0, 0)), Button( 800, 20, 200, 30, (255, 0, 0), text_size=22, text = 'Back to main menu', text_color = (0, 0, 0))]
     #page_num = 0
@@ -1326,7 +1326,7 @@ def main_menu():
                 gap = _ * 19
 
 
-                font_creator(page[_].strip(), (255, 255, 255), game_window, 50, 120 + gap, bold = False , text_type = 'Impact', text_size = 16)
+                font_creator(page[_].strip(), (255, 255, 255), game_window, 50, 130 + gap, bold = False , text_type = 'Britannic', text_size = 16)
 
         elif menu == 'settings':
 

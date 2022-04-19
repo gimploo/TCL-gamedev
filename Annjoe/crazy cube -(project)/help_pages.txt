@@ -6,19 +6,19 @@
         *bomb -----> can destroy all enemies active at the moment(Press B)(will be alerted when available) 
         
         ----------------Power ups---------------------
-
-        *time freeze (green) ---> freezes enemies for 10 seconds
-        *shield (yellow) ---> protection for 20 seconds
-        *gravity aura (blue) ---> creates a field that will enslave the enemies and fight for you
-        *health (red) ----> health increase(+4)
-        *score bag (brownish pink)----> gives score increments depending on the size
+                                                                                                    				
+        *time freeze (green) ---> freezes enemies for 10 seconds. (press T to activate)
+        *shield (yellow) ---> protection for 20 seconds. (press X to activate)                                             
+        *gravity aura (blue) ---> creates a field that will enslave the enemies and fight for you . (press G to activate)
+        *health (red) ----> health increase(+5). 
+        *score bag (brownish pink)----> gives score increments depending on the size. 
 
         ------------Scoring and Damage-----------------
 
         Hitting enemies increase score as well as deal damage.
-        Score and damage depends on size of the enemies.The bigger the enemy, the bigger the both.
+        score and damage depends on size of the enemies.The bigger the enemy, the bigger the both.
 
-    Note 1:  Slo-mo hits are enabled by default.
-    Note 2:  Press Esc to quit game while playing.
+    Note 1:Slo-mo hits are enabled by default.
+    Note 2:Press Esc to quit game while playing.
 
 
